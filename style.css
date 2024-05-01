@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body{
+    background-color: #f1f1f1;
+}
+
+ul{
+    padding: 0 80px;
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    animation: navani .6s ease forwards;
+    animation-delay: calc(.15s * var(--navAni));
+}
+
+ul a{
+    color: #000;
+}
+
+ul li{
+    padding: 5px;
+    margin-left: 10px;
+}
+
+ul li:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+nav{
+    list-style: none;
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    animation: navani .6s ease forwards;
+    animation-delay: calc(.15s * var(--navAni));
+}
+
+nav a.logo{
+    font-size: 33px;
+    color:#000;
+    font-weight: 600;
+}
+
+nav .links a:not(:last-child){
+    margin-right: 40px;
+}
+
+nav .login button{
+    padding: 8px 14px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    cursor: pointer;
+    animation: navani .8s ease forwards;
+}
+
+nav .login text.signup{
+    color: #000;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+nav .login button.signup{
+    background-color: #708090;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+button{
+    padding: 8px 14px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    animation: navani .8s ease forwards;
+    align-items: center;
+}
+
+text.signup{
+    color: #000;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button.signup{
+    background-color: #708090;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+nav .login button.language{
+    background-color: #708090;
+    color: #fff;
+    border-radius: 4px;
+    margin-right: 0px;
+}
+
+nav .login button.language.notactive{
+    color: #708090;
+    border-radius: 4px;
+    margin-bottom: 14px;
+}
+
+header{
+    padding: 0 80px;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: navani .8s ease forwards;
+    animation-delay: calc(.15s * var(--navAni));
+}
+
+header .left{
+    width: 700px;
+}
+
+header .left h1{
+    font-size: 60px;
+}
+
+header .left h1 span{
+    color: #0f2182;
+}
+
+header .left p{
+    margin: 8px 0;
+    color: #777;
+}
+
+header .left a{
+    display: flex;
+    align-items: center;
+    background: #708090;
+    width: 120px;
+    padding: 18px;
+    border-radius: 10px;
+}
+
+header .left a i{
+    background-color: #fff;
+    font-size: 24px;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+header .left a span{
+    color: #fff;
+    margin-left: 10px;
+}
+
+header .right{
+    width: 250px;
+    line-height: 0.6;
+    word-spacing: 4px;
+    margin-top: 270px;
+}
+
+header .right h1{
+    font-size: 30px;
+}
+
+header .right h1 span{
+    color: #0f2182;
+}
+
+header .right p{
+    margin: 20px 0;
+    color: #777;
+}
+
+header .right p{
+    margin: 20px 0;
+    color: #777;
+}
+
+header .right a{
+    display: flex;
+    align-items: center;
+    background: none;
+    width: 150px;
+    padding: 18px;
+    margin: 15px 0;
+    border: 2px solid #708090;
+}
+
+header .right a i{
+    background-color: #708090;
+    font-size: 24px;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+header .right a span{
+    color: #708090;
+    margin-left: 10px;
+}
+
+header img{
+    width: 550px;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 30%;
+    top: 20%;
+    width: 40%;
+    height: 50%;
+    animation: navani .8s ease forwards;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.modal h1{
+    padding: 10px 50px 20px;
+    margin: 2px 0;
+    color: #000;
+    text-align: center;
+}
+
+.modal h2{
+    padding: 0px 40px 0px;
+    margin: 2px 0;
+    color: #000;
+    text-align: center;
+}
+
+.modal p{
+    padding: 20px 0px 20px;
+    margin: 0px 0;
+    color: #000;
+    text-align: center;
+  }
+
+.modal .signup1{
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    position: relative;
+    padding: 10 30% 10px;
+    background-color: #708090;
+    color: #fff;
+    border-radius: 0px;
+}
+
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container .user-details .input-box{
+    width: 70%;
+    height: 45px;
+    justify-content: center;
+}
+.user-details .input-box input{
+    height: 40px;
+    width: 100%;
+}
+
+.modal i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #708090;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.close {
+    color: #000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes navani{
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

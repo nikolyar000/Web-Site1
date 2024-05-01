@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>N1L</title>
+    <link rel="website icon" type="png/jpg" href="./assets/images.jpg">
+</head>
+<body>
+    
+    <nav class="container">
+        <a href="#" id="brand" class="logo">N1L</a>
+        <div class="links">
+            <a href="#">Company</a>
+            <a href="#">Products</a>
+            <a href="#">Articles</a>
+            <a href="#">Solution</a>
+            <a href="#">Contacts</a>
+        </div>
+        <div class="login">
+            <text class="signup">0(000)00-00-00</text>
+
+            <button onclick="openModal()" class="signup">Contact</button>
+
+            <button class="language">EN</button>
+            <button class="langiage.notactive">RU</button>
+        </div>
+    </nav>
+
+    <header>
+        <div class="left">
+            <h1>N1L <span></span></h1>
+            <p> N1L - it's guaranteed quality
+            <p>ventilation equipment
+            <p>from a German factory
+            </p>
+            <a href="#">
+                <span>Product</span>
+            </a>
+        </div>
+        <img src="assets/header.png">
+        <div class="right">
+            <p>Centrifugal
+            <p>exhaust fan
+            </p>
+            <h1>Meltem V-ll 30-N<span></span></h1>
+            <a href="#">
+                <span>More details</span>
+            </a>
+        </div>
+    </header>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h1>Leave a request</h1>
+    <p>We will contact you shortly</p>
+    <div class="container">
+        <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <input type="text" placeholder="Your name" required>
+                </div>
+            </div>
+        </form>
+        <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <input id="errorDiv" type="text" placeholder="+380-00-000-00-00" required>
+                </div>
+            </div>
+        </form>
+        <button onclick="openModal1()" class="signup1">Will send</button>
+        <p>By clicking the "Send" button, you agree to
+        <p>Personal data processing rules.</p>
+        </div>
+    </div>
+
+    <div id="myModal1" class="modal">
+        <div class="modal-content">
+        <span onclick="closeModal1()" class="close">&times;</span>
+        <a href="#">
+            <i class='bx bx-check-circle'></i>
+        </a>
+        <h2>Thanks</h2>
+        <h2>for the application</h2>
+        <p>Your data has been sent succesfully!</p>
+        </div>
+</body>
+<script src="index.js"></script>
+</html>
